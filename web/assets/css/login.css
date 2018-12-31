@@ -1,0 +1,105 @@
+@charset "utf-8";
+/* CSS Document */
+
+html, body, div, h1, h2, h3, h4, h5, h6, p, blockquote, pre, form, table,fieldset {
+    border: 0 none;
+    font: inherit;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+    font-family: "Microsoft YaHei";
+    text-align: center;
+}
+p{
+    text-align: left;
+}
+[class*="fontawesome-"]:before {
+    font-family: 'FontAwesome', sans-serif;
+}
+
+/* ---------- GENERAL ---------- */
+
+body {
+    background-color: #e8e9ee;
+    font-family: "Varela Round", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5em;
+}
+
+input {
+
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    -webkit-appearance: none;
+}
+
+/* ---------- LOGIN ---------- */
+.swinfo{
+    font-weight: 800px;
+    color: blue;
+}
+#login {
+    margin: 50px auto;
+    width: 400px;
+    box-shadow: 0 0 4px #000000;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    background-color: #fff;
+
+}
+
+#login h2 {
+    border-radius: 10px 10px 0 0;
+    -webkit-border-radius: 10px 10px 0 0;
+    -moz-border-radius:  10px 10px 0 0;
+    background-color: #1b3160;
+    font-size: 28px;
+    padding: 20px 26px;
+}
+
+#login h2 span[class*="fontawesome-"] {
+    margin-right: 14px;
+    color: #fff;
+
+}
+
+#login fieldset {
+    background-color: #fff;
+    padding: 20px 20px;
+    border-radius: 0 0 10px 10px;
+    -webkit-border-radius: 0 0 10px 10px;
+    -moz-border-radius:  0 0 10px 10px;
+
+}
+
+#login fieldset p {
+    color: #777;
+    margin-bottom: 14px;
+}
+
+#login fieldset p:last-child {
+    margin-bottom: 0;
+}
+
+
+
+#login fieldset input[type="UserName"], #login fieldset input[type="password"], #login fieldset input[type="text"] {
+    color: #777;
+    padding: 4px 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
+}
+
+#login fieldset input[type="submit"] {
+    background-color: #33cc77;
+    color: #fff;
+    display: block;
+    margin: 0 auto;
+    padding: 4px 0;
+    width: 100px;
+}

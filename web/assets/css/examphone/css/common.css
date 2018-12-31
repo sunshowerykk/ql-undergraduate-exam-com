@@ -1,0 +1,130 @@
+body, h1, h2, h3, h4, h5, h6, p, dl, dd, ul, ol {
+	margin: 0;
+	padding: 0
+}
+em, i {
+	font-style: normal
+}
+li {
+	list-style: none
+}
+a, a:hover {
+	text-decoration: none
+}
+img {
+	border: 0;
+	width: 100%;
+	height: auto;
+	vertical-align: top
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0
+}
+label {
+	cursor: default
+}
+body, button, input, select, textarea {
+	font: 13px/1.5 arial, 'microsoft yahei', \5b8b\4f53
+}
+textarea {
+	resize: none
+}
+a, a:focus {
+	outline: none
+}
+.clearfix:after {
+	content: '\20';
+	display: block;
+	height: 0;
+	clear: both
+}
+.clearfix {
+*zoom:1
+}
+.clear {
+	display: block;
+	height: 0;
+	clear: both;
+	font-size: 0;
+	line-height: 0;
+	overflow: hidden
+}
+.fl {
+	float: left;
+	display: inline
+}
+.fr {
+	float: right;
+	display: inline
+}
+.fn {
+	float: none
+}
+.tl {
+	text-align: left
+}
+.tr {
+	text-align: right
+}
+.tc {
+	text-align: center
+}
+.noBg {
+	background: none!important
+}
+
+.mui-off-canvas-wrap .mui-bar {
+	position: fixed !important;
+}
+p {
+	color: #000;
+}
+
+/* 侧滑菜单部分 */
+.mui-scrollB {
+	position: absolute;
+    z-index: 1;
+    width: 100%;
+}
+.mui-scroll-wrapper {
+	background-color: #ffe3e0;
+}
+.mui-off-canvas-left .title {
+	margin: 0;
+	height: 42px;
+	background-color: #fff;
+	padding-top: 9px;
+	padding-bottom: 9px;
+}
+.title img {
+	width: 65px;
+	height: 24px;
+	margin: 0 auto;
+	display: block;
+}
+.content {
+	background-color: #ffe3e0;
+}
+.content ul li {
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #db2c1b;
+}
+.content img {
+	width: 30px;
+	height: 30px;
+}
+.content p {
+	display: inline-block;
+	margin-left: 10px;
+	color: #db2c1b;
+	line-height: 31px;
+}
+.active {
+	background: #db2c1b;
+}
+.active p {
+	color: #fff;
+}

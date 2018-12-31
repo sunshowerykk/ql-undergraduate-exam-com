@@ -1,0 +1,78 @@
+
+
+.findcontainer {
+    padding: 2px 10px 10px 10px;
+    margin-left: 0;
+    width: 1040px;
+
+}
+
+#page{font:10px/16px arial;
+    margin: 2px;
+    float: right;
+}
+#page span{
+    float:left;
+    margin:0 3px;
+    cursor:pointer;
+    border: 1px solid #ddd;
+    color: #ccc;
+    padding: 3px 7px;}
+#page a{float:left;margin:0 3px;border:1px solid #ddd;padding:3px 7px; text-decoration:none;color:#666}
+#page a.now_page,#page a:hover{color:#fff;background:#05c}
+
+
+/* ul li以橫排顯示 */
+/* 所有class為menu的div中的ul樣式 */
+div.menu ul
+{
+    list-style:none; /* 去掉ul前面的符號 */
+    margin: 0px; /* 與外界元素的距離為0 */
+    padding: 0px; /* 與內部元素的距離為0 */
+    width: auto; /* 寬度根據元素內容調整 */
+}
+/* 所有class為menu的div中的ul中的li樣式 */
+div.menu ul li
+{
+    float:left; /* 向左漂移，將豎排變為橫排 */
+}
+/* 所有class為menu的div中的ul中的a樣式(包括尚未點擊的和點擊過的樣式) */
+div.menu ul li a, div.menu ul li a:visited
+{
+    background-color:#e8e9ee; /* 背景色 */
+    border: 1px #4e667d solid; /* 邊框 */
+    color:#00F; /* 文字顏色 */
+    display: block; /* 此元素將顯示為塊級元素，此元素前後會帶有換行符 */
+    line-height: 1.35em; /* 行高 */
+    padding: 4px 20px; /* 內部填充的距離 */
+    text-decoration: none; /* 不顯示超鏈結下劃線 */
+    white-space: nowrap; /* 對於文本內的空白處，不會換行，文本會在在同一行上繼續，直到遇到 <br> 標籤為止。 */
+}
+/* 所有class為menu的div中的ul中的a樣式(滑鼠移動到元素中的樣式) */
+div.menu ul li a:hover
+{
+    background-color: #bfcbd6; /* 背景色 */
+    color: #465c71; /* 文字顏色 */
+    text-decoration: none; /* 不顯示超鏈結下劃線 */
+}
+/* 所有class為menu的div中的ul中的a樣式(滑鼠點擊元素時的樣式) */
+div.menu ul li a:active
+{
+    background-color: #465c71; /* 背景色 */
+    color: #cfdbe6; /* 文字顏色 */
+    text-decoration: none; /* 不顯示超鏈結下劃線 */
+}
+
+/*移入變色，點擊變色   */
+.line-h-mark{
+	background-color:#F0F0F0;
+}
+
+.line-c-mark{
+	background-color:#FFDAB9;
+}
+
+/*td 內容自動換行*/
+.Newline td{
+    word-wrap:break-word;word-break:break-all;
+}

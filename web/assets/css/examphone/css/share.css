@@ -1,0 +1,388 @@
+
+@charset "utf-8";
+.edui-default .edui-editor{
+	z-index: 3 !important;
+}
+
+
+   *{
+   	padding: 0px;
+   	margin: 0px;
+   }
+   
+   ul,li,dl,dd{
+   	list-style-type: none;
+   }
+   
+   body{
+   	font-family: "微软雅黑";
+   	width: 100%;
+   	height: 100%;
+   }
+   
+   a{
+   	display: block;
+   	text-decoration: none;
+   }
+
+   figure{
+   	margin: 0px;
+   }
+
+   p{
+   	margin-bottom: 0px;
+   }
+   
+   img{
+   	display: block;
+   }
+   
+   h1, h2, h3, h4, h5, h6{
+    margin-top: 0px;
+    margin-bottom: 0px;
+   }
+   
+   body.f5{
+   	background-color: #f5f5f5;
+   }
+   body.bai{
+   	background-color: #fff;
+   }
+   
+      
+   /*html,body.adminBg{
+   	background-color: #ffefed;
+   }*/
+
+/*以上重置*/
+
+body.adminBg .headRight{
+	background-color: #ffefed;
+}
+
+body.bai .headRight{
+	background-color: #fff;
+}
+
+
+body.f5 .headRight{
+	background-color: #f5f5f5;
+}
+
+
+.headRight{
+	position: relative;
+	z-index: 1;
+	width: 100%;
+	height: fit-content;
+background-color: #fff;
+overflow: hidden;
+}
+
+
+.adminHead{
+	background-color: #fff;
+	box-shadow: none !important;
+}
+
+.adminHead a{
+	color: #333 !important;
+}
+
+.adminTop{
+	width: 100%;
+	height: fit-content;
+	overflow: hidden;
+	background-color: #db2c1b;
+	position: fixed;
+	left: 0px;
+	top: 44px;
+	z-index: 200;
+}
+
+.adminTopCen{
+	width: 95%;
+	height: fit-content;
+	overflow: hidden;
+	margin: 0 auto;
+	overflow: hidden;
+	display: flex;
+	-webkit-justify-content: space-between;
+	-moz-justify-content: space-between;
+	-o-justify-content: space-between;
+	justify-content: space-between;
+	-webkit-align-items: center;
+	-moz-align-items: center;
+	-o-align-items: center;
+	align-items: center;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	position: relative;
+}
+
+.adminTopCen .menu{
+	width: 22px;
+	height: 16.5px;
+	display: block;
+	margin-bottom: 0px;
+	background-color: transparent;
+	padding: 0px;
+}
+
+.menuDiv{
+	width: 20%;
+	height: fit-content;
+	overflow: hidden;
+	display: flex;
+}
+
+.adminTopCen .logo{
+	width:67px;
+	height: 23px;
+	display: block;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -33.5px;
+	margin-top: -11.5px;
+}
+
+
+.adminTopCen figure{
+	width: auto;
+	height: fit-content;
+	overflow: hidden;
+	display: flex;
+	-webkit-align-items: center;
+	-moz-align-items: center;
+	-o-align-items: center;
+	align-items: center;
+	margin: 0px;
+}
+
+.adminTopCen figure img{
+	width: 25px;
+	height: 25px;
+}
+
+.adminTopCen figure figcaption{
+	font-family: "微软雅黑";
+	font-size:15px;
+	color: #fff;
+	margin-left: 0.25em;
+}
+
+/*menuBg*/
+
+.menuBg{
+	width:75%;
+	height: 100%;
+	background-color:transparent;
+    position: fixed;
+    left:0px;
+    top: 0px;
+    z-index: -1;
+    opacity: 0;
+}
+
+.menuCen{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background-color: #ffefed;
+}
+
+.menuTop{
+	overflow: hidden;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	background-color: #fff;
+}
+
+.menuTop img{
+	width: 68px;
+	height: 24px;
+	margin: 0 auto;
+}
+
+.menuUl{
+	overflow: hidden;
+}
+
+.menuUl ul{
+	overflow: hidden;
+}
+
+.menuUl ul li{
+	overflow: hidden;
+	border-bottom: solid 1px #ffb3ab;
+	height: fit-content;
+}
+
+.menuUl ul li:last-child{
+	border-bottom: none;
+}
+
+.menuUl ul li.menuActive{
+	background-color: #db2c1b;
+}
+
+.menuUl ul li.menuActive figure figcaption{
+	color: #fff;
+}
+
+.menuUl ul li a{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	-webkit-align-items: center;
+	-moz-align-items: center;
+	-o-align-items: center;
+	align-items: center;
+}
+
+.menuUl figure{
+	overflow: hidden;
+	display: flex;
+	margin: 0px;
+	-webkit-align-items: center;
+	-moz-align-items: center;
+	-o-align-items: center;
+	align-items: center;
+	width: 100%;
+	padding-bottom: 15px;
+	padding-top: 15px;
+}
+
+.menuUl figure img{
+	width: 25px;
+	height: 25px;
+	margin-left: 34%;
+}
+
+.menuUl figure figcaption{
+	font-family: "微软雅黑";
+	font-size: 15px;
+	color: #db2c1b;
+	margin-left: 0.5em;
+}
+
+.adminHei{
+	box-shadow: none !important;
+}
+
+/*adminUser*/
+
+.adminUser{
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.4);
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	z-index: 7;
+	display: none;
+}
+
+.adminUserBg{
+	overflow: hidden;
+	background-color: #fff;
+	margin-top: 89px;
+}
+
+.adminUserBg ul{
+	overflow: hidden;
+}
+
+.adminUserBg ul li{
+	width: 80%;
+	height: fit-content;
+	overflow: hidden;
+	border-bottom: solid 1px #e6e6e6;
+	display: flex;
+	margin: 0 auto;
+	-webkit-align-items: center;
+	-moz-align-items: center;
+	-o-align-items: center;
+	align-items: center;
+	padding-bottom: 15px;
+	padding-top: 15px;
+}
+
+.adminUserBg ul li:last-child{
+	border-bottom: none;
+}
+
+
+.adminUserBg ul li a{
+	width: 100%;
+	height: 100%;
+}
+
+.adminUserBg ul li figure{
+	margin: 0px;
+	overflow: hidden;
+	display: flex;
+}
+
+.adminUserBg figure i{
+	width: 25px;
+	height: 25px;
+	display: block;
+	background: url(/assets/images/phone/images/menu_icon.png) no-repeat 0px 0px;
+	background-size:24.5px  159px;
+	margin-left: 35%;
+}
+
+.adminUserBg ul li:nth-child(2) figure i{
+	background: url(/assets/images/phone/images/menu_icon.png) no-repeat 0px -44.5px;
+	background-size:24.5px  159px;
+}
+
+.adminUserBg ul li:nth-child(3) figure i{
+	background: url(/assets/images/phone/images/menu_icon.png) no-repeat 0px -92px;
+	background-size:24.5px  159px;
+}
+
+.adminUserBg ul li:nth-child(4) figure i{
+	background: url(/assets/images/phone/images/menu_icon.png) no-repeat 0px -138px;
+	background-size:24.5px  159px;
+}
+
+.adminUserBg figure figcaption{
+	font-family: "微软雅黑";
+	font-size: 15px;
+	color: #333;
+	margin-left: 1em;
+}
+
+html,body{
+	overflow-x: hidden;
+}
+
+.heiBg{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.4);
+	position: fixed;
+    left:0px;
+    top: 0px;
+    display: none;
+    z-index: 20;
+}
+
+.ycDing .mui-bar, 
+.ycDing .adminTop, 
+.ycDing .testBottom, 
+.ycDing .testTwoHead, 
+.ycDing .teacfooter,
+.ycDing .testFixed .testTop,
+.ycDing .testPop,
+.ycDing .adminUser{
+  position: absolute;
+}
+
+.ycDing .testTwoList{
+	
+}

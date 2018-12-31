@@ -1,0 +1,51 @@
+.demo {
+	margin: 0 auto
+}
+
+
+.ul_pics li {
+	float: left;
+	width: 150px;
+	height: 140px;
+	border: 1px solid #ddd;
+	padding: 2px;
+	text-align: center;
+	margin: 0 5px 5px 0;
+}
+
+.ul_pics li .img {
+	width: 150px;
+	height: 130px;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.ul_pics li img {
+	max-width: 150px;
+	max-height: 130px;
+	vertical-align: middle;
+}
+
+.progress {
+	position: relative;
+	padding: 1px;
+	border-radius: 3px;
+	margin: 60px 0 0 0;
+}
+
+.bar {
+	background-color: green;
+	display: block;
+	width: 0%;
+	height: 20px;
+	border-radius: 3px;
+}
+
+.percent {
+	position: absolute;
+	height: 20px;
+	display: inline-block;
+	top: 3px;
+	left: 2%;
+	color: #fff
+}

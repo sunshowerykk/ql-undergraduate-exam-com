@@ -1,0 +1,2261 @@
+@charset "utf-8";
+
+
+
+/*---------------------------- 首页开始  ---------------------------------------*/
+
+.homeTit{
+	overflow: hidden;
+	width: 100%;
+	height: auto;
+	font-size: 0.133333333333rem;
+	color: #666666;
+	text-indent: 2em;
+	background-color: #ffe3e0;
+	line-height:0.5rem ;
+	font-weight: 600;
+}
+
+.ptTit{
+	overflow: hidden;
+	position: relative;
+}
+
+.ptDiv{
+	width: 50%;
+	height: 0.5rem;
+	position: absolute;
+	right: 2em;
+	top: 0px;
+}
+
+.ptDiv p{
+	width: auto;
+	font-size: 0.116666666667rem;
+	color: #fff !important;
+	font-family: '微软雅黑';
+	width: 0.666666666667rem;
+	height: 0.333333333333rem;
+	border-radius: 4px;
+	text-align: center;
+	line-height: 0.333333333333rem;
+	background-color: #db2c1b;
+	text-indent: 0em;
+	cursor: pointer;
+	float: right;
+	margin-top: 0.0835rem;
+	margin-left: 0.5em;
+
+}
+
+/*homeCen*/
+
+.homeCen{
+	width: 95%;
+	height: calc( 100% - 6% );
+	overflow: visible;
+	margin: 0 auto;
+}
+
+
+/*homeCenTop*/
+
+.homeCenTop{
+	overflow: hidden;
+	border-bottom: solid 1px #e6e6e6;
+}
+
+.pthomeCenTop ul li{
+	width:30% !important;
+}
+
+.pthomeCenTop ul li:nth-child(n+4){
+	margin-top: 0.166666666667rem !important;
+}
+
+.pthomeCenTop ul li:nth-child(5) .homeSele{
+	margin-left: 0.05rem;
+}
+
+.homeCenTop ul{
+	overflow: hidden;
+	display: flex;
+	padding-bottom: 0.291666666667rem;
+	padding-top: 0.291666666667rem;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+.homeCenTop ul li{
+	width: auto;
+	height: auto;
+	display: flex;
+	/*	margin-left: 0.25em;*/
+}
+
+.homeCenTop ul li:first-child{
+	margin-left: 0px;
+}
+
+.homeCenTop ul li label{
+	font-size: 0.133333333333rem;
+	color: #333333;
+	font-family: "微软雅黑";
+	text-align: left;
+	line-height: 0.416666666667rem;
+}
+
+.homeSele{
+	width: 2.33333333333rem;
+	height: 0.416666666667rem;
+	overflow: hidden;
+	border: solid 1px #e6e6e6;
+	border-radius: 6px;
+	background-color: #f5f5f5;
+	margin-left: 0.2em;
+	position: relative;
+}
+
+.homeSele select{
+	width: 100%;
+	height: 0.416666666667rem;
+	background-color: transparent;
+	border: none;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	z-index: 1;
+	font-size: 0.116666666667rem;
+	text-indent: 1em;
+	color: #999999;
+}
+
+.homeSele img{
+	display: block;
+	width: 0.1rem;
+	height: 0.0533333333333rem;
+	position: absolute;
+	right: 0.1em;
+	top: 50%;
+	margin-top: -0.0216666666667rem;
+}
+
+.homeCenTop ul li > input{
+	width: 1rem;
+	height: 0.416666666667rem;
+	border-radius: 6px;
+	background-color: #1e68c0;
+	border: none;
+	font-size: 0.15rem;
+	color: #fff;
+	font-family: "微软雅黑";
+	cursor: pointer;
+}
+
+/*homeTable*/
+
+.headTa{
+	overflow: visible;
+	width: 100%;
+	height: 86.7%;
+	margin-top: 0.25rem;
+}
+
+.homeTable{
+	overflow: auto;
+	width: 100%;
+	max-height: 90%;
+}
+
+.homeTableHead{
+	overflow: hidden;
+	border: none;
+}
+
+.homeTrHead{
+	background-color: #ffe3e0;
+	border: solid 1px #fec7c1;
+}
+
+.homeTrHead th{
+	font-size: 0.116666666667rem;
+	color: #db2c1b;
+	font-family: "微软雅黑";
+	font-weight: normal;
+	line-height: 0.333333333333rem;
+	border-left: solid 1px #fec7c1;
+	width: calc( 100% / 6 );
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.homeTrHead th:first-child{
+	border-left: none;
+}
+
+/*homeTrTwo*/
+
+.homeTrTwo{
+	overflow: hidden;
+	border-bottom: solid 1px #e6e6e6;
+	border-left: solid 1px #e6e6e6;
+	border-right: solid 1px #e6e6e6;
+}
+
+.homeTrTwo td{
+	font-size: 0.116666666667rem;
+	color: #333333;
+	font-family: "微软雅黑";
+	line-height: 0.333333333333rem;
+	text-align: center;
+	width: calc( 100% / 6 );
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+	max-width: 2rem;
+}
+
+.homeTrTwo td a{
+	display: block;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+}
+
+/*homeTrOper*/
+
+.homeTrTwo td.homeTrOper{
+	color: #0060ff;
+	position: relative;
+	cursor: pointer;
+}
+
+.homeTrTwo td.homeTrOper a{
+	color: #0060ff;
+}
+
+/*.homeTrTwo td.homeTrOper:after{
+	content: '';
+	background: url(../assets/images/up.png) no-repeat left top;
+	background-size: 0.1rem 0.0583333333333rem;
+	width:0.1rem ;
+	height:  0.0583333333333rem;
+	position: absolute;
+	right:0px;
+	top: 50%;
+	margin-top: -0.0291666666667rem;
+	margin-right: 33%;
+}*/
+
+/*headDi*/
+
+.headDi{
+	overflow: hidden;
+	display: flex;
+	-webkit-justify-content: space-between;
+	-moz-justify-content: space-between;
+	-o-justify-content: space-between;
+	justify-content: space-between;
+	padding-top: 0.25rem;
+}
+
+.headDi p{
+	font-size: 0.116666666667rem;
+	color: #999999;
+	font-family: "微软雅黑";
+	text-align: left;
+	line-height: 0.183333333333rem;
+}
+
+/*headRight*/
+
+.headRight{
+	min-width: 13%;
+	height: auto;
+	overflow: hidden;
+	display: flex;
+	-webkit-justify-content: space-between;
+	-moz-justify-content: space-between;
+	-o-justify-content: space-between;
+	justify-content: space-between;
+}
+
+.headRight input{
+	width: 0.183333333333rem;
+	height: 0.183333333333rem;
+	font-size: 0.116666666667rem;
+	color: #666666;
+	font-family: "微软雅黑";
+	border: solid 1px #cccccc;
+	border-radius: 2px;
+	text-align: center;
+}
+
+
+
+
+/*---------------------------- 首页结束  ---------------------------------------*/
+
+
+
+/*---------------------------- 答题开始 ---------------------------------------*/
+
+body.anAuto{
+	overflow: auto;
+}
+
+.anHead{
+	overflow: hidden;
+	background-color: #db2c1b;
+	width: 100%;
+	height: -webkit-fit-content;
+	height: -moz-fit-content;
+	height: -o-fit-content;
+	height: fit-content;
+	padding-bottom: 0.25rem;
+	padding-top: 0.25rem;
+}
+
+.anHeadCon{
+	width: 95%;
+	height: auto;
+	overflow: hidden;
+	margin: 0 auto;
+	display: flex;
+}
+
+.anHeadLeft{
+	width: 50%;
+	height: auto;
+	overflow: hidden;
+}
+
+.anHeadLeft h6{
+	font-family: "微软雅黑";
+	font-size: 0.15rem;
+	color: #fff;
+	text-align: left;
+}
+
+.anHeadLeft p{
+	font-family: "微软雅黑";
+	font-size: 0.135rem;
+	color: #fff;
+	text-align: left;
+	line-height: 0.3rem;
+	margin-top: 0.183333333333rem;
+}
+
+/*anHeadRight*/
+
+.anHeadRight{
+	width: 50%;
+	height: auto;
+	overflow: hidden;
+	display: flex;
+	-webkit-justify-content: flex-end;
+	-moz-justify-content: flex-end;
+	-o-justify-content: flex-end;
+	justify-content: flex-end;
+	margin-top: 0.516666666667rem;
+}
+
+.anHeadRightA{
+	width: 37%;
+	height: auto;
+	overflow: visible;
+	display: flex;
+}
+
+.anHeadRightA img{
+	width:0.516666666667rem;
+	height:0.516666666667rem;
+	display: block;
+}
+
+.anHeadRightA p{
+	font-size: 0.125rem;
+	color: #ffef00;
+	font-family: "微软雅黑";
+	line-height:0.516666666667rem;
+	padding-left: 0.183333333333rem;
+	padding-right: 0.183333333333rem;
+	white-space: nowrap;
+}
+
+.anHeadRightA div.anTime{
+	font-size:0.366666666667rem;
+	color: #ffef00;
+	font-family: "微软雅黑";
+	font-weight: normal;
+	line-height:0.516666666667rem ;
+	display: flex;
+}
+
+/*anHeadRightB*/
+
+.anHeadRightB{
+	width: auto;
+	height: fit-content;
+	overflow: hidden;
+	display: flex;
+	-webkit-justify-content: space-between;
+	-moz-justify-content: space-between;
+	-o-justify-content: space-between;
+	justify-content: space-between;
+	margin-top: 0.1rem;
+}
+
+.anHeadRightB li{
+	width: auto;
+	height: 0.3rem !important;
+	overflow: hidden;
+	border-radius: 50px;
+	background-color: #fff000;
+	font-size: 0.125rem;
+	color: #db2c1b;
+	text-align: center;
+	font-family: "微软雅黑";
+	line-height: 0.3rem;
+	height: -webkit-fit-content;
+	height: -moz-fit-content;
+	height: -o-fit-content;
+	height: fit-content;
+	margin-left: 0.166666666667rem;
+	margin-right: 0.166666666667rem;
+	cursor: pointer;
+	white-space: nowrap;
+	padding-left: 0.166666666667rem;
+	padding-right: 0.166666666667rem;
+}
+
+
+.anHeadRightB li.anBlast{
+	background-color: #fff;
+}
+
+/*检查*/
+
+.anJCha{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.4);
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	z-index: 999;
+	display: none;
+}
+
+.anQuan, .anTs, .anLs, .teYj{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.4);
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	z-index: 999;
+	display: none;
+}
+
+.anQuanRadio{
+	overflow: hidden;
+	border-bottom: solid 1px #e6e6e6;
+}
+
+.anJChaCen{
+	width: 5rem;
+	height: auto;
+	overflow: hidden;
+	background-color: #fff;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -2.5rem;
+	margin-top: -7%;
+}
+
+.anJcTit{
+	overflow: hidden;
+	background-color: #363535;
+	font-family: "微软雅黑";
+	font-size: 0.15rem;
+	color: #fff;
+	text-align: center;
+	position: relative;
+	line-height: 0.5rem;
+}
+
+.anJcTit img{
+	display: block;
+	width:0.15rem ;
+	height:0.15rem ;
+	position: absolute;
+	right: 1em;
+	top: 50%;
+	margin-top: -0.075rem;
+	margin-right: 0px;
+	cursor: pointer;
+}
+
+.anJcCen{
+	width: 75%;
+	height: auto;
+	overflow: hidden;
+	margin: 0 auto;
+	padding-top: 0.25rem;
+	padding-bottom: 0.25rem;
+}
+
+.anJcCen h1{
+	font-family: "微软雅黑";
+	font-size: 0.15rem;
+	color: #333;
+	text-indent: 2em;
+	border-bottom: solid 1px #e6e6e6;
+	font-weight: normal;
+	padding-bottom: 0.25rem;
+}
+
+.anJcTxt{
+	overflow: hidden;
+	padding-top: 0.25rem;
+}
+
+.anJcCen p{
+	font-size: 0.15rem;
+	color: #666666;
+	font-family: "微软雅黑";
+	text-indent: 2.5em;
+	line-height: 0.253333333333rem;
+}
+
+.anJcBtn{
+	width:82%;
+	height: auto;
+	overflow: hidden;
+	margin:0.25rem auto 0 auto;
+	display: flex;
+	-webkit-justify-content: space-between;
+	-moz-justify-content: space-between;
+	-o-justify-content: space-between;
+	justify-content: space-between;
+}
+
+.anJcBtn > div, .anJcBtn > div a{
+	width: 1.2rem;
+	height: 0.416666666667rem;
+	border-radius: 10px;
+	background-color: #cccccc;
+	font-family: "微软雅黑";
+	font-size: 0.15rem;
+	text-align: center;
+	line-height: 0.416666666667rem;
+	color: #fff;
+	cursor: pointer;
+}
+
+.anJcBtn > div.anJcBtnB{
+	background-color: #db2c1b;
+}
+/*anTab*/
+
+.anTab{
+	width: 95%;
+	height: auto;
+	overflow: hidden;
+	margin: 0 auto;
+	padding-bottom: 0.25rem;
+	padding-top: 0.25rem;
+}
+
+.anTabHead{
+	overflow: hidden;
+	border-bottom: solid 1px #e6e6e6;
+}
+
+.anTabHead ul{
+	overflow: hidden;
+	display: flex;
+}
+
+.anTabHead ul li{
+	font-size: 0.125rem;
+	color: #333333;
+	font-family: "微软雅黑";
+	border-bottom: solid 1px transparent;
+	padding-left: 0.166666666667rem;
+	padding-right: 0.166666666667rem;
+	padding-bottom: 0.0833333333333rem;
+	padding-top: 0.0833333333333rem;
+	font-weight: 600;
+	cursor: pointer;
+}
+.anTabHead ul li a{
+	color:#333333;
+}
+
+.anTabHead ul li.anActive{
+	color: #db2c1b;
+	border-bottom: solid 2px #db2c1b;
+}
+
+/*anNum*/
+.ptDla dl dd{
+	font-family: '微软雅黑';
+	font-size: 18px;
+	color: #333;
+}
+
+.anNum{
+	margin-top: 0.25rem;
+	overflow: hidden;
+	width: 100%;
+	height: auto;
+}
+.anNum ul li.NumActive{
+	background-color: #0a6cd6;
+}
+.anNum ul li.NumActive a{
+	color: #fff;
+}
+.anNum > ul{
+	overflow: hidden;
+	display: flex;
+}
+
+.anNum > ul > li{
+	width: 0.25rem;
+	height: 0.25rem;
+	border: solid 1px #cccccc;
+	font-size: 0.125rem;
+	color: #333333;
+	font-family: "微软雅黑";
+	line-height: 0.25rem;
+	text-align: center;
+	margin-left: 0.0833333333333rem;
+}
+.anNum > ul > li > a{
+	text-decoration:none;
+	color: #333333;
+}
+.anNum > ul > li:first-child{
+	margin-left:0px;
+}
+
+/*.anNum dl*/
+
+.anNum dl{
+	overflow: hidden;
+	margin-top: 0.25rem;
+	width: 100%;
+	height: auto;
+}
+
+/*要删除的样式*/
+
+.anNum dl dd{
+	width: 100%;
+	height: 2000px;
+	/*background-color: olive;*/
+	font-size: 18px;
+	overflow: auto;
+	display: none;
+}
+
+.anNum dl dd:first-child{
+	display: block;
+}
+
+/*.anNum dl dd.anNumA{*/
+/*background-color: white;*/
+/*}*/
+
+/*.anNum dl dd.anNumB{*/
+/*background-color: olive;*/
+/*}*/
+
+/*.anNum dl dd.anNumC{*/
+/*background-color: orange;*/
+/*}*/
+
+/*.anNum dl dd.anNumD{*/
+/*background-color: orchid;*/
+/*}*/
+
+/*anQuanRadio ul*/
+
+.anQuanRadio ul{
+	width: 80%;
+	margin:0 auto ;
+	height: auto;
+	overflow: hidden;
+	display: flex;
+	-webkit-justify-content: space-between;
+	-moz-justify-content: space-between;
+	-justify-content: space-between;
+	justify-content: space-between;
+	padding-bottom: 0.15rem;
+}
+
+.anQuanRadio ul li{
+	display: flex;
+	position: relative;
+}
+
+.anQuanRadio ul li img{
+	display: block;
+	width: 0.183333333333rem;
+	height: 0.183333333333rem;
+}
+
+.anQuanRadio ul li p{
+	font-family: "微软雅黑";
+	font-size:0.166666666667rem;
+	color: #333333;
+	line-height: 0.183333333333rem;
+	text-indent: 1em;
+}
+
+.anQuanRadio ul li input{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	z-index: 1;
+	opacity: 0;
+	cursor: pointer;
+}
+
+.anQuanRadio ul li.anQuanActive p{
+	color: #db2c1b;
+}
+
+/*提示*/
+
+.anTsFlex{
+	overflow: hidden;
+	display: flex;
+	-webkit-justify-content:center;
+	-moz-justify-content:center;
+	-o-justify-content:center;
+	justify-content:center;
+	padding-bottom: 0.25rem;
+	padding-top: 0.25rem;
+}
+
+.anTsFlex img{
+	width: 0.45rem;
+	height: 0.45rem;
+	display: block;
+}
+
+.anTsFlex p{
+	font-size: 0.15rem;
+	color: #666666;
+	font-family: "微软雅黑";
+	text-indent: 1.5em;
+	line-height: 0.45rem;
+}
+
+.anTsBtn{
+	margin: 0 auto;
+}
+
+.anTsBtn a{
+	display: block;
+	color: #fff !important;
+	background-color: #db2c1b !important;
+}
+
+
+/*---------------------------- 答题结束 ---------------------------------------*/
+
+
+/*---------------------------- 自评分阅卷开始 ---------------------------------------*/
+
+.homeTwo{
+	overflow: hidden;
+	background-color: #ffe3e0;
+	width: 100%;
+	height: -webkit-fit-content;
+	height: -moz-fit-content;
+	height: -o-fit-content;
+	height: fit-content;
+	padding-bottom: 0.25rem;
+	padding-top: 0.25rem;
+}
+
+
+.homeTwo .anHeadLeft h6, .homeTwo .anHeadLeft p{
+	color: #db2c1b;
+}
+
+.homeTwo .anHeadRightB li.anJc{
+	background-color: #1e68c0;
+	color: #fff;
+}
+
+.homeTwo .anHeadRightB li{
+	background-color: #999999;
+	color: #fff;
+}
+
+.homeTwo .anHeadRightB li.anBlast{
+	background-color: #db2c1b;
+	color: #fff;
+}
+
+.anLs .anJcBtnB{
+	margin: 0 auto;
+}
+
+/*---------------------------- 自评分阅卷结束 ---------------------------------------*/
+
+
+
+/*---------------------------- 我的答卷开始 ---------------------------------------*/
+
+.homeSheete{
+	background-color: #ffe3e0;
+	border: solid 1px #fec7c1;
+}
+
+.homeSheete th{
+	font-size: 0.116666666667rem;
+	color: #db2c1b;
+	font-family: "微软雅黑";
+	font-weight: normal;
+	line-height: 0.333333333333rem;
+	border-left: solid 1px #fec7c1;
+	width: calc( 100% / 10 );
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.homeSheete th:first-child {
+	border-left: none;
+}
+
+
+.homeSheeteA{
+	overflow: hidden;
+	border-bottom: solid 1px #e6e6e6;
+	border-left: solid 1px #e6e6e6;
+	border-right: solid 1px #e6e6e6;
+}
+
+
+.homeSheeteA td{
+	font-size: 0.116666666667rem;
+	color: #333333;
+	font-family: "微软雅黑";
+	line-height: 0.333333333333rem;
+	text-align: center;
+	width: calc( 100% / 10 );
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	max-width: 1.5rem;
+}
+
+.homeSdJ{
+	display: flex;
+	width: 100% !important;
+	-webkit-justify-content: center;
+	-moz-justify-content: center;
+	-o-justify-content: center;
+	justify-content: center;
+	overflow: visible !important;
+}
+
+.homeSdJ span{
+	color:#cccccc;
+	padding-left: 0.116666666667rem;
+	padding-right: 0.116666666667rem;
+}
+
+.homeSdJ a{
+	color:#db2c1b;
+}
+
+.homeSdJ a:first-child{
+	color:#0060ff;
+}
+
+
+/*---------------------------- 我的答卷结束 ---------------------------------------*/
+
+
+/*---------------------------- 查看答卷开始 ---------------------------------------*/
+
+.sheeteHead{
+	width: 95%;
+	height: auto;
+	overflow: hidden;
+	margin: 0 auto;
+	display: flex;
+}
+
+.sheeteHead .anHeadLeft{
+	width: 35%;
+}
+
+.sheeteCen{
+	width: 30%;
+}
+
+.sheeteRight{
+	width: 35%;
+	display: flex;
+	height: -webkit-fit-content;
+	height: -moz-fit-content;
+	height: -o-fit-content;
+	height: fit-content;
+}
+
+/*sheeteCen*/
+
+.homeTwo .sheeteCen h6{
+	color: #333333;
+	font-weight: bold;
+}
+
+.homeTwo .sheeteCen p {
+	color: #333333;
+}
+
+.homeTwo .sheeteCen p span{
+	color: #db2c1b;
+	font-weight: 600;
+	font-size: 0.233333333333rem;
+}
+
+/*sheeteRight*/
+
+.sheeteRight a{
+	font-family: "微软雅黑";
+	font-size: 0.135rem;
+	color: #333333;
+	padding-left: 0.166666666667rem;
+	padding-right: 0.166666666667rem;
+	line-height: 0.183333333333rem;
+	display: flex;
+}
+
+.sheeteRight a:first-child{
+	border-right: solid 2px #333;
+}
+
+.sheeteRight a i{
+	width: 0.183333333333rem;
+	height: 0.183333333333rem;
+	display: inline-block;
+	background: url(../assets/images/cuo.png) no-repeat left top;
+	background-size: 100% 100%;
+	margin-right: 0.5em;
+}
+
+/*anImg*/
+
+.anImg{
+	display: flex;
+	height: -webkit-fit-content;
+	height: -moz-fit-content;
+	height: -o-fit-content;
+	height: fit-content;
+	margin-top: 0.35rem;
+}
+
+.anImg img{
+	width:1.06666666667rem;
+	height:1.06666666667rem;
+	display: block;
+}
+
+.anImg h1{
+	font-family: "微软雅黑";
+	font-size:0.45rem;
+	color: #db2c1b;
+	margin-left: 1em;
+	line-height:1.06666666667rem;
+}
+
+.anThree{
+	margin-top: 0px;
+}
+
+/*---------------------------- 查看答卷结束 ---------------------------------------*/
+
+
+/*---------------------------- 教师端首页开始 ---------------------------------------*/
+
+.teTableTop{
+	background-color: #ffe3e0;
+	border: solid 1px #fec7c1;
+}
+
+.teTableTop th{
+	font-size: 0.116666666667rem;
+	color: #db2c1b;
+	font-family: "微软雅黑";
+	font-weight: normal;
+	line-height: 0.333333333333rem;
+	border-left: solid 1px #fec7c1;
+	width: calc( 100% / 9 );
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.teTableTop th:first-child {
+	border-left: none;
+}
+
+
+.teTableTwo{
+	overflow: hidden;
+	border-bottom: solid 1px #e6e6e6;
+	border-left: solid 1px #e6e6e6;
+	border-right: solid 1px #e6e6e6;
+}
+
+.teTableTwo td{
+	font-size: 0.116666666667rem;
+	color: #333333;
+	font-family: "微软雅黑";
+	line-height: 0.333333333333rem;
+	text-align: center;
+	width: calc( 100% / 9 );
+	overflow: visible;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	max-width: 0.833333333333rem;
+
+}
+
+
+.teTableTwo td.homeTrOper {
+	color: #0060ff;
+	position: relative;
+	cursor: pointer;
+
+}
+
+
+.teTableTwo td.homeTrOper i{
+	display: inline-block;
+	width:0.1rem;
+	height: 0.0583333333333rem;
+	background: url(/assets/images/ticon_downblue.png) no-repeat left top;
+	background-size: 100% 100%;
+	margin-left: 4%;
+}
+
+
+.teCaozuo{
+	width: 100%;
+	height: auto;
+	border: solid 1px #e6e6e6;
+	border-radius: 4px;
+	-webkit-box-shadow: 0px 0px 5px #c8c8c8;
+	-moz-box-shadow: 0px 0px 5px #c8c8c8;
+	-o-box-shadow: 0px 0px 5px #c8c8c8;
+	box-shadow: 0px 0px 2px #c8c8c8;
+	position: absolute;
+	left: 50%;
+	top: 0.3rem;
+	z-index: 5;
+	background-color: #fff;
+	padding-top: 0.0416666666667rem;
+	padding-bottom: 0.0416666666667rem;
+	margin-left: -50%;
+	margin-top: 0px;
+	padding-left: 0.05rem;
+	padding-right: 0.1rem;
+	display: none;
+}
+
+.teCaozuo p{
+	width: 95%;
+	height: auto;
+	overflow: hidden;
+	font-size: 0.125rem;
+	color: #333;
+	font-family: "microsoft yahei";
+	text-align: center;
+	line-height: 0.333333333333rem;
+	padding-left: 0.05rem;
+	padding-right: 0.05rem;
+	cursor: pointer;
+}
+
+.teCaozuo p a{
+	display: block;
+	color: #333;
+}
+
+/*teVisible*/
+
+.teVisible{
+	overflow: visible !important;
+}
+
+.teActive{
+	background-color: #c6e0ff;
+}
+
+.teActive a{
+	color: #1e68c0 !important;
+}
+
+.teHide{
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+	width: 100%;
+
+}
+
+/*---------------------------- 教师端首页结束 ---------------------------------------*/
+
+
+/*---------------------------- 教师端批改答卷开始 ---------------------------------------*/
+
+.teAnHead{
+	overflow: hidden;
+	background-color: #ffe3e0;
+	width: 100%;
+	height: -webkit-fit-content;
+	height: -moz-fit-content;
+	height: -o-fit-content;
+	height: fit-content;
+	padding-bottom: 0.25rem;
+	padding-top: 0.25rem;
+}
+
+.teAnHead .anHeadLeft{
+	width: 35%;
+}
+
+.teAnCen{
+	width: 30%;
+}
+
+.teAnHead .anHeadRight{
+	width: 35%;
+	display: block;
+}
+
+.teAnHead .anHeadLeft h6 {
+	font-family: "微软雅黑";
+	font-size: 0.15rem;
+	color: #db2c1b;
+	text-align: left;
+}
+
+.teAnHead .anHeadLeft p {
+	font-family: "微软雅黑";
+	font-size: 0.135rem;
+	color: #db2c1b;
+	text-align: left;
+	line-height: 0.3rem;
+	margin-top: 0.183333333333rem;
+}
+
+.teAnHead .anHeadRightA p{
+	color: #db2c1b;
+}
+
+.teAnHead .anHeadRightA div.anTime{
+	color: #db2c1b;
+}
+
+.teAnHead .anHeadRightA{
+	width: 100%;
+	margin-top: 0.65rem;
+}
+
+/*teAntxt*/
+
+.teAntxt{
+	font-family: "微软雅黑";
+	font-size: 0.135rem;
+	color: #333333;
+	padding-left: 0.166666666667rem;
+	padding-right: 0.166666666667rem;
+	line-height: 0.183333333333rem;
+	text-align: right;
+}
+
+.teAntxt a{
+	display: block;
+	color: #333333;
+}
+
+.teAnHead .anHeadRightB{
+	-webkit-justify-content: flex-end;
+	-moz-justify-content: flex-end;
+	-o-justify-content: flex-end;
+	justify-content: flex-end;
+}
+
+
+.teTwo{
+	overflow: hidden;
+	display: flex;
+	padding-bottom: 0.291666666667rem;
+	padding-top: 0.291666666667rem;
+
+}
+
+.teTwo img{
+	display: block;
+	width:0.583333333333rem;
+	height:0.525rem ;
+}
+
+.teTwo h6{
+	font-family: "微软雅黑";
+	font-size: 0.233333333333rem;
+	color: #666666;
+	line-height: 0.525rem;
+	margin-left: 1em;
+}
+
+
+
+
+/*---------------------------- 教师端批改答卷结束 ---------------------------------------*/
+
+
+
+/*---------------------------- 教师端已批试卷开始 ---------------------------------------*/
+
+.teForm .homeSele input{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	font-size: 0.125rem;
+	text-indent: 1em;
+	color: #999999;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	border: none;
+	background-color: transparent;
+	outline: none;
+	line-height: 0.416666666667rem;
+}
+
+.teHj{
+	width: 1.3rem;
+}
+
+.teForm ul li p{
+	font-family: "微软雅黑";
+	font-size: 0.133333333333rem;
+	color: #333;
+	line-height: 0.416666666667rem;
+	margin-left: 1em;
+}
+
+.teForm .homeSele img{
+	width: 0.233333333333rem;
+	height: 0.233333333333rem;
+	margin-top: -0.116666666667rem;
+
+}
+
+/*homeSeleSpan*/
+
+.homeSeleSpan{
+	padding-right: 40px;
+	position: relative;
+	overflow: hidden;
+}
+
+.homeSeleSpan span{
+	display: block;
+	position: absolute;
+	right: 0px;
+	top: 50%;
+	width: 0.125rem;
+	height: 0.025rem;
+	background-color: #cccccc;
+	margin-top: 0px;
+}
+
+/*teColor*/
+
+.teColor{
+	width: 100%;
+	margin-top: 0.666666666667rem;
+}
+
+.teColor.anHeadRightA p, .teColor.anHeadRightA div.anTime{
+	color: #e45a4c;
+}
+
+
+/*---------------------------- 教师端已批试卷结束 ---------------------------------------*/
+
+
+
+
+
+/*---------------------------- 试卷管理开始 ---------------------------------------*/
+
+.adminInput > div{
+	width: 1rem;
+	height: 0.416666666667rem;
+	line-height: 0.416666666667rem;
+	border-radius: 6px;
+	border: none;
+	font-size: 0.15rem;
+	color: #fff;
+	font-family: "微软雅黑";
+	cursor: pointer;
+	background-color: #db2c1b !important;
+	text-align: center;
+}
+
+
+.adminInput > div a{
+	display: block;
+	color: #fff;
+}
+
+/*adminYuTit*/
+
+.adminYuTit{
+	display: flex;
+	height:inherit;
+	-webkit-align-items: flex-end;
+	-moz-align-items: flex-end;
+	-o-align-items: flex-end;
+	align-items: flex-end;
+}
+
+.adminYuGl{
+	display: flex;
+	height: inherit;
+	-webkit-align-items: flex-end;
+	-moz-align-items: flex-end;
+	-o-align-items: flex-end;
+	align-items: flex-end;
+	-webkit-justify-content: center;
+	-moz-justify-content: center;
+	-o-justify-content: center;
+	justify-content: center;
+}
+
+.adminYuGl.sheeteRight a{
+	border-right: none;
+	width: auto;
+	border-radius: 50px;
+	background-color: #1e68c0;
+	text-align: center;
+	color: #fff;
+	display: block;
+	padding-left: 0.25rem;
+	padding-right: 0.25rem;
+	padding-top: 0.05rem;
+	padding-bottom: 0.05rem;
+}
+
+/*---------------------------- 试卷管理结束 ---------------------------------------*/
+
+
+
+/*---------------------------- 阅卷人管理开始 ---------------------------------------*/
+
+.adminTwoDiv{
+	overflow: hidden;
+	display: flex;
+	-webkit-justify-content: center;
+	-moz-justify-content: center;
+	-o-justify-content: center;
+	justify-content: center;
+	width: 100% !important;
+	margin: 0 auto;
+	height: inherit;
+}
+
+.adCaoA{
+	width: auto;
+	height: auto;
+	overflow: visible;
+	display: flex;
+	-webkit-justify-content: center;
+	-moz-justify-content: center;
+	-o-justify-content: center;
+	margin-top: 0.0733333333333rem;
+	margin-right: 0.5em;
+}
+
+
+.adCaoA a{
+	display: flex !important;
+	width: 100%;
+	overflow: visible !important;
+	-webkit-justify-content: center;
+	-moz-justify-content: center;
+	-o-justify-content: center;
+	justify-content: center;
+}
+
+.adCaoA a img{
+	display: inline-block;
+	width: 0.216666666667rem;
+	height: 0.216666666667rem;
+}
+
+.adCaoA a p{
+	font-size: 0.116666666667rem;
+	font-family: "微软雅黑";
+	line-height: 0.333333333333rem;
+	text-align: center;
+	color: #0060ff;
+	display: inline-block;
+	line-height: 0.216666666667rem;
+	text-indent: 0.5em;
+}
+
+.adCaoB a p{
+	color: #666666;
+}
+
+
+/*---------------------------- 阅卷人管理结束  ---------------------------------------*/
+
+
+/*---------------------------- 管理端批改中试卷开始  ---------------------------------------*/
+
+.adminFour{
+	display: flex;
+}
+
+.adminFour form{
+	margin-left: 1em;
+	margin-top: 0.0666666666667rem;
+}
+
+.adminFour form ul li .homeSele{
+	width: 1.81666666667rem;
+}
+
+.adFoDe a{
+	color: #999999 !important;
+}
+
+.teCaozuo p.adFoDe:hover {
+	background-color: transparent !important;
+	color: #999999 !important;
+}
+
+/*adFiveImg*/
+
+.homeCenTop ul li.adFiveImg img{
+	display: block;
+	width: 0.1rem;
+	height: 0.0533333333333rem;
+	position: absolute;
+	right: 0.1em;
+	top: 50%;
+	margin-top: -0.0216666666667rem;
+}
+
+.homeCenTop ul li.adFiveImg .homeSele{
+	width: 1.81666666667rem;
+}
+
+
+/*---------------------------- 管理端批改中试卷结束  ---------------------------------------*/
+
+
+
+/*---------------------------- 录入新试卷开始  ---------------------------------------*/
+
+.adminAdd ul li .homeSele input{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	font-size: 0.116666666667rem;
+	text-indent: 1em;
+	color: #999999;
+	border: none;
+	background-color: transparent;
+	outline: none;
+}
+
+.adminAdd ul li label{
+	width: 22%;
+	text-align: right;
+	white-space: nowrap;
+}
+
+.adminAdd ul li:nth-child(n+5){
+	margin-top: 0.166666666667rem;
+}
+
+/*adminXia*/
+
+.adminXia{
+	margin-top: 0px;
+}
+
+.adminXia .anTab .anTabHead{
+	display: flex;
+	border-bottom: none;
+}
+
+.adminXia .anTab .anTabHead h6{
+	font-size: 0.15rem;
+	color: #999999;
+	font-family: "微软雅黑";
+	font-weight: normal;
+	padding-bottom: 0.0833333333333rem;
+	padding-top: 0.0833333333333rem;
+	margin-right: 1em;
+}
+
+.adminXia .anTab .anTabHead ul{
+	border-bottom: solid 1px #e6e6e6;
+	width: calc( 100% - 4% );
+}
+
+/*adminXia dl*/
+
+.adminXia .anTab{
+	width: 100%;
+}
+
+.adminXia .anTab dl{
+	margin-top: 0px;
+}
+
+.adAddBtn{
+	width: auto;
+	height: auto;
+	overflow: hidden;
+	background-color: #db2c1b;
+	display: flex;
+	-webkit-align-items: center;
+	-moz-align-items: center;
+	-o-align-items: center;
+	align-items: center;
+	display: inline-flex;
+	padding-left: 0.233333333333rem;
+	padding-right: 0.233333333333rem;
+	border-radius: 6px;
+	padding-bottom: 0.133333333333rem;
+	padding-top: 0.133333333333rem;
+	cursor: pointer;
+	margin-left: 3em;
+}
+
+.adAddBtn img{
+	display: block;
+	width: 0.183333333333rem;
+	height: 0.183333333333rem;
+}
+
+.adAddBtn p{
+	color: #fff;
+	font-family: "微软雅黑";
+	font-size: 0.15rem;
+	line-height: 0.183333333333rem;
+	text-indent: 0.25em;
+}
+
+/*adminAddTop*/
+
+.adminAddTop{
+	overflow: hidden;
+	background-color: red;
+	width: 100%;
+	height: auto;
+	margin-top: 0.25rem;
+}
+
+
+/*adminAddHead*/
+
+.adminAddHead{
+	overflow: hidden;
+	border: solid 1px #d9d9d9;
+	/* margin-top: 0.25rem; */
+	background-color: #ffff;
+}
+
+.adminAddHead ol{
+	overflow: hidden;
+	padding: 0.166666666667rem;
+	position: relative;
+}
+
+.adminAddHead ol li{
+	overflow: hidden;
+	display: flex;
+	position:relative;
+	margin-top: 0.166666666667rem;
+}
+
+.adminAddHead ol li:first-child{
+	margin-top: 0px;
+}
+
+.adminAddHead ol li label{
+	width: 0.833333333333rem;
+	height: auto;
+	overflow: hidden;
+	text-align: right;
+	display: block;
+	font-size: 0.15rem;
+	font-family: "微软雅黑";
+	color: #333;
+	line-height: 0.4rem;
+}
+
+.adminAddHead ol li div.adminDiv{
+	width: calc( 100% - 1rem );
+	height: auto;
+	overflow: hidden;
+	margin-left: 1em;
+}
+
+.adminDiv input.aDtXt{
+	width: 2.34166666667rem;
+	height: auto;
+	border: solid 1px #e6e6e6;
+	background-color: #f5f5f5;
+	border-radius: 6px;
+	line-height: 0.4rem;
+	text-indent: 0.2rem;
+	font-size: 0.15rem;
+	outline: none;
+	font-family: "微软雅黑";
+	color: #333;
+}
+
+.adminBg{
+	overflow: hidden;
+	border: solid 1px #e6e6e6;
+	background-color: #f5f5f5;
+	line-height: 0.4rem;
+	height: 0.4rem;
+	border-radius: 6px;
+	text-indent: 0.2rem;
+	font-size: 0.15rem;
+	font-family: "微软雅黑";
+	color: #333;
+}
+
+.adminBg p{
+	text-indent: 0.2rem;
+	font-size: 0.15rem;
+	font-family: "微软雅黑";
+	color: #333;
+	line-height: 0.4rem;
+}
+
+.adminBgCen{
+	height: auto !important;
+}
+
+.adminBgDiv{
+	width: 99%;
+	height: auto;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+.addHead{
+	overflow: hidden;
+	padding-bottom: 0.25rem;
+	padding-top: 0.25rem;
+}
+
+/*addSele*/
+
+.addSele{
+	width: 2.34166666667rem;
+	height: auto;
+	border: solid 1px #e6e6e6;
+	background-color: #f5f5f5;
+	border-radius: 6px;
+	position: relative;
+}
+
+.addSele select{
+	width: 100%;
+	line-height: 0.4rem;
+	text-indent: 0.2rem;
+	font-size: 0.15rem;
+	outline: none;
+	font-family: "微软雅黑";
+	color: #333;
+	background-color: transparent;
+	border: none;
+}
+
+.addSele img{
+	width:0.15rem;
+	height: 0.0833333333333rem;
+	position: absolute;
+	display: block;
+	right: 1em;
+	top: 50%;
+	margin-top: -0.0416666666667rem;
+}
+
+/*adminRadio*/
+
+.adminRadio{
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+.adminRa{
+	width: auto;
+	height: auto;
+	overflow: hidden;
+	display: flex;
+	position: relative;
+	padding-top: 0.1rem;
+	padding-bottom: 0.1rem;
+	margin-left: 2em;
+}
+
+.adminRa input{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	-webkit-opacity: 0;
+	-moz-opacity: 0;
+	-khtml-opacity: 0;
+	opacity: 0;
+}
+
+.adminRa:first-child{
+	margin-left: 0px;
+}
+
+.adminRa img{
+	z-index: 20;
+	display: block;
+	width: 0.183333333333rem;
+	height: 0.183333333333rem;
+}
+
+.adminRa p{
+	font-size: 0.15rem;
+	color: #333;
+	font-family: "微软雅黑";
+	text-indent: 0.5em;
+}
+
+
+.adIn {
+	overflow: hidden;
+	border: solid 1px #e6e6e6;
+	background-color: #f5f5f5;
+	line-height: 0.4rem;
+	border-radius: 6px;
+	text-indent: 0.2rem;
+	font-size: 0.15rem;
+	font-family: "微软雅黑";
+	color: #333;
+	width: 100%;
+	outline: none;
+}
+
+.addCen{
+	overflow: auto;
+	height: auto !important;
+}
+
+/*adminLi*/
+
+.adminLi{
+	width: auto;
+	height: auto;
+	position: absolute;
+	right: 1em;
+	top: 50%;
+	display: flex;
+	-webkit-justify-content: flex-end;
+	-moz-justify-content: flex-end;
+	-o-justify-content: flex-end;
+	justify-content: flex-end;
+	margin-top: -0.1rem;
+
+}
+
+.adminLiA{
+	width: auto;
+	height: auto;
+	overflow: hidden;
+	display: flex;
+	padding-left: 0.1rem;
+	padding-right: 0.1rem;
+	cursor: pointer;
+}
+
+.adminLiA img{
+	display: block;
+	width:0.2rem ;
+	height:0.2rem ;
+}
+
+.adminLiA p{
+	font-family: "微软雅黑";
+	font-size: 0.125rem;
+	color: #1e68c0;
+	line-height:0.2rem ;
+	text-indent: 0.5em;
+}
+
+
+.adminBg textarea{
+	text-indent: 0.2rem;
+	font-size: 0.15rem;
+	font-family: "微软雅黑";
+	color: #333;
+	line-height: 0.25rem;
+	width: 97%;
+	border: none;
+	background-color: transparent;
+	min-height:0.4rem;
+	outline: none;
+	resize:none;
+	margin-top: 0.1rem;
+}
+
+.adminCk .adminLi{
+	top: 94%;
+}
+
+.adminDel{
+	font-size: 0.125rem;
+	color: #fff;
+	background-color: #2c2a2a;
+	font-family: "微软雅黑";
+	width: fit-content;
+	padding-left: 0.15rem;
+	padding-right: 0.15rem;
+	line-height: 0.25rem;
+	position: absolute;
+	right: 0px;
+	top: -1px;
+}
+
+/*adminPop*/
+
+/*.adminPop{*/
+/*width: 100%;*/
+/*height: 100%;*/
+/*position: fixed;*/
+/*left: 0px;*/
+/*top: 0px;*/
+/*z-index: 99;*/
+/*background-color: rgba(0,0,0,0.5);*/
+/*!*display: none;*!*/
+
+/*}*/
+
+/*.adminPopCen{*/
+/*width: 99%;*/
+/*margin: 0 auto;*/
+/*height: auto;*/
+/*overflow: hidden;*/
+/*position: absolute;*/
+/*left: 50%;*/
+/*top: 50%;*/
+/*margin-left: -25%;*/
+/*margin-top: -15%;*/
+/*background-color: #fff;*/
+/*}*/
+
+/*.adminPopCen ul*/
+
+.adminPopCen ul{
+	overflow: hidden;
+	padding-bottom: 0.25rem;
+	padding-top: 0.25rem;
+}
+
+.adminPopCen ul li {
+	overflow: visible;
+	display: flex;
+	margin-top: 0.15rem;
+}
+
+.adminPopCen ul li:first-child{
+	margin-top: 0px;
+}
+
+.adminPopCen ul li label{
+	font-size: 0.15rem;
+	font-family: "微软雅黑";
+	color: #333;
+	line-height: 0.4rem;
+	width: 0.833333333333rem;
+	height: auto;
+	overflow: hidden;
+	text-align: right;
+}
+
+.adminPopCen ul li div{
+	width: calc( 100% - 1rem );
+	position: relative;
+	height: 0.4rem;
+	margin-left: 0.25rem;
+	overflow: visible;
+}
+
+.adminPopCen ul li.ptTi label{
+	margin-right: 0.25rem;
+}
+
+.adminPopCen ul li.ptTi div{
+	width: auto;
+	height: inherit;
+	margin-left:0px;
+}
+
+.adminPopCen ul li div input.adInput{
+	width: 2.34166666667rem;
+	height: auto;
+	border: solid 1px #e6e6e6;
+	background-color: #f5f5f5;
+	border-radius: 6px;
+	line-height: 0.4rem;
+	text-indent: 0.2rem;
+	font-size: 0.15rem;
+	outline: none;
+	font-family: "微软雅黑";
+	color: #333;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+
+
+.adPopDiv{
+	width: calc( 100% - 1rem );
+	height: auto;
+	overflow: hidden;
+	margin-left: 1em;
+}
+
+.adPopDiv input{
+	overflow: hidden;
+	border: solid 1px #e6e6e6;
+	background-color: #f5f5f5;
+	line-height: 0.4rem;
+	border-radius: 6px;
+	text-indent: 0.2rem;
+	font-size: 0.15rem;
+	font-family: "微软雅黑";
+	color: #333;
+	width: 99%;
+	outline: none;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+
+.adPopDiv .addSele{
+	width: 2.34166666667rem;
+	height: inherit;
+	border: solid 1px #e6e6e6;
+	background-color: #f5f5f5;
+	position: relative;
+	margin-left: 0px;
+}
+
+.adPopDiv .addSele select{
+	height: 100%;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+
+.adPopDiv .addSele img{
+	right:0.05rem;
+}
+
+.adPopDiv .adminRadio{
+	margin-left: 0px;
+}
+
+
+.adPopDiv .adminRadio .adminRa{
+	width: auto;
+	padding-bottom: 0.1rem;
+	padding-top: 0.1rem;
+}
+
+.adminPopCen > h6{
+	font-family: "微软雅黑";
+	font-size: 0.15rem;
+	color: #fff;
+	background-color: #333;
+	line-height: 0.4rem;
+	text-align: center;
+	position: relative;
+}
+
+.adminPopCen > h6 img{
+	display: block;
+	width:0.15rem;
+	height: 0.15rem;
+	position: absolute;
+	right: 1em;
+	top: 50%;
+	margin-right: 0px;
+	margin-top: -0.075rem;
+	cursor: pointer;
+}
+
+/*adPopBtn*/
+
+.adPopBtn{
+	width: 85%;
+	height: auto;
+	overflow: hidden;
+	margin: 0 auto;
+	display: flex;
+	-webkit-justify-content: center;
+	-moz-justify-content: center;
+	-o-justify-content: center;
+	justify-content: center;
+	padding-bottom: 0.25rem;
+}
+
+.adPopBtn > button{
+	font-family: "微软雅黑";
+	font-size: 0.15rem;
+	color: #fff;
+	background-color: #a2a2a2;
+	width: 0.916666666667rem;
+	height: auto;
+	border-radius: 6px;
+	line-height: 0.375rem;
+	text-align: center;
+	margin-left: 0.25rem;
+	margin-right: 0.25rem;
+	cursor: pointer;
+	display: block;
+	border: none;
+	outline: none;
+
+}
+
+.adPopBtn > button:last-child{
+	background-color:#db2c1b ;
+}
+
+
+/*adTwoAdd*/
+
+.adTwoAdd{
+	border-bottom:none;
+}
+
+/*adminSc*/
+
+.homeCenTop div.adminSc{
+	padding-top: 0px;
+	padding-bottom: 0px;
+	display: flex;
+}
+
+.homeCenTop div.adminSc label{
+	font-size: 0.133333333333rem;
+	color: #333333;
+	font-family: "微软雅黑";
+	width: 4.5%;
+	text-align: right;
+	line-height: 0.416666666667rem;
+	white-space: nowrap;
+}
+
+.adTwoAdd ul{
+	padding-bottom: 0.211666666667rem;
+}
+
+.adminTe{
+	margin-top: 0.25rem;
+	display: block !important;
+}
+
+.adminTeDiv .homeSele{
+	width: 100%;
+	border-radius: 0px;
+	height: 200px;
+}
+
+.adminTeDiv{
+	display: flex;
+}
+
+.adSc{
+	width: 1rem;
+	height: 0.416666666667rem;
+	line-height: 0.416666666667rem;
+	border-radius: 6px;
+	border: none;
+	font-size: 0.15rem;
+	color: #fff;
+	font-family: "微软雅黑";
+	background-color: #1e68c0 !important;
+	text-align: center;
+	margin-left: 1.5em;
+	position: relative;
+	cursor: pointer;
+}
+
+.adSc input{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	-webkit-opacity: 0;
+	-moz-opacity: 0;
+	-khtml-opacity: 0;
+	opacity: 0;
+	cursor: pointer;
+}
+
+.adSub{
+	width: 1rem;
+	height: 0.416666666667rem;
+	line-height: 0.416666666667rem;
+	border-radius: 6px;
+	border: none;
+	background-color: #db2c1b !important;
+	text-align: center;
+	margin-left: 0.8em;
+	position: relative;
+	cursor: pointer;
+	margin-top: 0.25rem;
+}
+
+.adSub input{
+	width: 100%;
+	height: 100%;
+	border: none;
+	background-color: transparent;
+	font-size: 0.15rem;
+	color: #fff;
+	font-family: "微软雅黑";
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	outline: none;
+	cursor: pointer;
+}
+
+.ptTr{
+	width: 1rem;
+	height: 0.416666666667rem;
+	border-radius: 6px;
+	background-color: #1e68c0;
+	border: none;
+	font-size: 0.15rem;
+	color: #fff;
+	font-family: "微软雅黑";
+	cursor: pointer;
+	display: block;
+	text-align: center;
+	line-height: 0.416666666667rem;
+	margin-left: 0.25rem;
+}
+/*---------------------------- 录入新试卷结束  ---------------------------------------*/
+
+
+@media only screen and (max-width:1250px ) {
+	.adminAdd ul li:nth-child(n+4) {
+		margin-top: 0.166666666667rem;
+	}
+
+	.homeCenTop div.adminSc label{
+		width: 7.5%;
+	}
+
+}
+
+/*ptShi*/
+
+.ptShiA{
+	width: 0.55rem;
+	height: 0.316666666667rem;
+	line-height: 0.316666666667rem;
+	border-radius: 6px;
+	background-color: #1e68c0;
+	border: none;
+	font-size: 0.15rem;
+	color: #fff;
+	font-family: "微软雅黑";
+	cursor: pointer;
+}
+
+.ptShib{
+	width: 0.55rem;
+	height: 0.316666666667rem;
+	line-height: 0.316666666667rem;
+	border-radius: 6px;
+	border: none;
+	font-size: 0.15rem;
+	color: #fff;
+	font-family: "微软雅黑";
+	cursor: pointer;
+	background-color: #db2c1b !important;
+	text-align: center;
+}
+
+.ptShiC{
+	margin-top: 0.125rem;
+}
+
+.ptShid td{
+	line-height: 0.125rem;
+	}
+
+.ptshiUl li{
+	width: 30% !important;
+}
+
+.adminAdd .ptshiUl li:nth-child(n+4) {
+
+	margin-top: 0.166666666667rem !important;
+
+}
+
+.adminAdd .ptshiUl li label {
+	width: 0.75rem;
+}
+
+.homeSelePt{
+	margin-left: 0.4em !important;
+}
+.ptshiSc{
+	padding-top: 0px !important;
+	margin-left: 0.25em !important;
+}
+.anNumA{
+	padding-top: 20px;
+	}

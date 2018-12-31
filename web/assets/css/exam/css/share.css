@@ -1,0 +1,416 @@
+
+@charset"utf-8";
+
+*{
+	padding: 0px;
+	margin: 0px;
+}
+
+html,body {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background-color: #fff;
+}
+
+ul,li,ol,dl,dd{
+	list-style-type: none;
+}
+
+a, a:hover{
+	text-decoration: none;
+}
+
+/*a{*/
+	/*display: block;*/
+/*}*/
+
+
+select{
+	appearance:none;
+	-moz-appearance:none; /* Firefox */
+	-webkit-appearance:none; /* Safari 和 Chrome */
+	outline: none;
+}
+
+/* 头部*/
+
+.homeHead{
+	width: 100%;
+	height: auto;
+	overflow: visible;
+	background-color: #fff;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	z-index: 99;
+}
+
+.homeHeadCon{
+	width: 95%;
+	height: auto;
+	overflow: visible;
+	margin: 0 auto;
+	display: flex;
+	-webkit-justify-content: space-between;
+	-moz-justify-content: space-between;
+	-o-justify-content: space-between;
+	justify-content: space-between;
+	padding-bottom: 0.108333333333rem;
+	padding-top: 0.108333333333rem;
+}
+
+.Headlogo{
+	width:2.43333333333rem;
+	height: 0.375rem;
+}
+
+.Headlogo img{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.headLogin{
+	width: 3.6666666667rem;
+	height: auto;
+	overflow: visible;
+	display: flex;
+	-webkit-justify-content: space-between;
+	-moz-justify-content: space-between;
+	-o-justify-content: space-between;
+	justify-content: space-between;
+	margin-right: 2.66666666667rem;
+}
+
+.headLogin p{
+	font-size:0.116666666667rem;
+	color: #333333;
+	font-family: "微软雅黑";
+	line-height: 0.375rem;
+}
+
+.headLogin h6{
+	font-family: "微软雅黑";
+	font-size:0.15rem;
+	color:#db2c1b;
+	font-weight: normal;
+	line-height: 0.375rem;
+}
+
+.loginImg{
+	width: 0.625rem;
+	height: fit-content;
+	overflow: hidden;
+	display: flex;
+	-webkit-justify-content: space-between;
+	-moz-justify-content: space-between;
+	-o-justify-content: space-between;
+	justify-content: space-between;
+	padding-top: 0.0833333333333rem;
+}
+
+
+.loginImg a{
+	width:100%;
+	height: auto;
+	overflow: hidden;
+	display: flex;
+	-webkit-justify-content: space-between;
+	-moz-justify-content: space-between;
+	-o-justify-content: space-between;
+	justify-content: space-between;
+}
+
+.loginImg img{
+	width: 0.2rem;
+	height: 0.2rem;
+	display: block;
+}
+
+.loginImg p{
+	line-height: 0.2rem;
+	font-size: 0.15rem;
+}
+
+
+.homeHeadTog{
+	width: 1.33333333333rem;
+	height: auto;
+	overflow: visible;
+	position: relative;
+}
+
+.headSele{
+	width:100%;
+	height: fit-content;
+	border-radius: 8px;
+	background-color: #db2c1b;
+	display: flex;
+	-webkit-justify-content: center;
+	-moz-justify-content: center;
+	-o-justify-content: center;
+	justify-content: center;
+	padding-bottom: 0.0733333333333rem;
+	padding-top: 0.0733333333333rem;
+	cursor: pointer;
+}
+
+.headToggle{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	background-color: #fff;
+	border: solid 1px #e6e6e6;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+	display: none;
+	position: absolute;
+	right: 0px;
+	top: 0.35rem;
+	z-index: 100;
+}
+
+.headToggle ul{
+	overflow: hidden;
+}
+
+.headToggle ul li{
+	overflow: hidden;
+	background-color: #fff;
+	font-size: 0.133333333333rem;
+	color: #666;
+	font-family: "微软雅黑";
+	text-indent: 2em;
+	line-height: 0.333333333333rem;
+	border-bottom: solid 1px #e6e6e6;
+}
+
+.headToggle ul li:last-child{
+	border-bottom: none;
+}
+
+.headToggle ul li a{
+	display: block;
+	color: #666;
+}
+
+.headToggle ul li:hover{
+	background-color: #666;
+}
+
+.headToggle ul li:hover a{
+	color: #fff;
+}
+
+
+.headSele a{
+	display: block;
+	display: flex;
+	-webkit-justify-content: center;
+	-moz-justify-content: center;
+	-o-justify-content: center;
+	justify-content: center;
+}
+
+.headSele p{
+	font-family: "微软雅黑";
+	font-size: 0.15rem;
+	color: #fff;
+	line-height: 0.2rem;
+}
+
+.headSele img{
+	display: block;
+	width:0.0833333333333rem;
+	height: 0.0416666666667rem;
+	margin-top: 0.083333333333rem;
+	margin-left: 0.05em;
+}
+
+/*content*/
+
+.content, .contentTwo{
+	width: 100%;
+	height: 93%;
+	overflow: hidden;
+	margin-top: 0.591666666667rem;
+}
+
+.contentTwo{
+	height: auto !important;
+}
+
+.content{
+	position: relative;
+	display: flex;
+}
+
+.contentLeft{
+	width: 2.5rem;
+	height: 100%;
+	background-color: #f5f5f5;
+	border-right: solid 1px #ffb3ab;
+}
+
+.contentLeft ul{
+	overflow: hidden;
+}
+
+.contentLeft ul li{
+	overflow: hidden;
+	background-color: #ffe3e0;
+	display: flex;
+	padding-top: 0.1rem;
+	padding-bottom: 0.1rem;
+	border-bottom: solid 1px #ffb3ab;
+	-webkit-height:  fit-content;
+	-moz-height: fit-content;
+	-o-height: fit-content;
+	height: fit-content;
+}
+
+.contentLeft ul li:last-child{
+	border-bottom: solid 1px transparent;
+}
+
+.contentLeft ul li a{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	display: flex;
+}
+
+.contentLeft ul li img{
+	width:0.25rem;
+	height: 0.25rem;
+	display: block;
+	margin-left: 0.6em;
+}
+
+.contentLeft ul li a:hover p{
+	text-decoration: none;
+}
+
+.contentLeft ul li p{
+	font-size: 0.15rem;
+	color: #db2c1b;
+	font-family: "微软雅黑";
+	text-indent: 1em;
+	line-height: 0.25rem;
+}
+
+/*leftActive*/
+
+.contentLeft ul li.leftActive{
+	background-color: #db2c1b;
+	border-bottom: solid 1px transparent;
+}
+
+.contentLeft ul li.leftActive p{
+	color: #fff;
+}
+
+/*contentRight*/
+
+.contentRight{
+	width: calc( 100% - 2.5rem );
+	height: 100%;
+	overflow: auto;
+	background-color: #fff;
+}
+.ptFzDiv{
+	width: 5.5rem;
+	margin:200px auto;
+	height: auto;
+	overflow: hidden;
+}
+
+
+.ptFzDiv button{
+	font-family: "微软雅黑";
+	font-size: 0.15rem;
+	color: #fff;
+	background-color: #db2c1b;
+	width: 0.916666666667rem;
+	height: auto;
+	border-radius: 6px;
+	line-height: 0.375rem;
+	text-align: center;
+	margin-left: 0.25rem;
+	margin-right: 0.25rem;
+	cursor: pointer;
+	display: block;
+	border: none;
+	outline: none;
+	float: left;
+}
+
+.ptFzDiv input{
+	width: 4rem;
+	height: 0.416666666667rem;
+	overflow: hidden;
+	border: solid 1px #e6e6e6;
+	border-radius: 6px;
+	background-color: #f5f5f5;
+	font-size: 0.116666666667rem;
+	text-indent: 1em;
+	color: #333;
+	float: left;
+	outline: none;
+}
+
+
+/*--------------------------------适配---------------------------*/
+
+@media only screen and (max-width:1200px ) {
+	.headLogin{
+		width: 25%;
+	}
+
+	.homeTrTwo td.homeTrOper:after{
+		margin-right: 23%;
+	}
+
+	.loginImg{
+		width: 20%;
+	}
+	.headRight{
+
+		overflow: visible;
+	}
+
+	/*以上是首页*/
+
+	.anHeadLeft p{
+		line-height: 0.3rem !important;
+	}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
