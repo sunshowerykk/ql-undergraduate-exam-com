@@ -44,17 +44,17 @@ class ApitestController extends Controller
         curl_close($curl); // 关闭CURL会话
         return $tmpInfo; // 返回数据，json格式
     }
-	public function actionGetexambyuser(){
+	/*public function actionGetexambyuser(){
 		$req = Yii::$app->request;
         $this->layout = 0;
         $userid = $req->get('userid',"");
-        $subid = $req->get('subid',"");
-		$sql = "select a.ehid,a.ehexamid,a.ehscore,a.ehgardestatus,b.examcoursesectionname,b.examname FROM sys_examhistory a LEFT JOIN sys_exam b on a.ehexamid=b.examid WHERE a.userid='$userid' AND b.examsubid='$subid' AND a.ehstatus=1";
+        $courseid = $req->get('courseid',"");
+		$sql = "select a.ehid,a.ehexamid,a.ehscore,a.ehgardestatus,b.examcoursesectionname,b.examname FROM sys_examhistory a LEFT JOIN sys_exam b on a.ehexamid=b.examid WHERE a.userid='$userid' AND b.examcourseid='$courseid' AND a.ehstatus=1";
         $data=Yii::$app->db->createCommand($sql)->queryAll();
-		$sql="select count(*) from sys_exam where examsubid ='$subid'";
+		$sql="select count(*) from sys_exam where examcourseid ='$courseid'";
         $examnum=Yii::$app->db->createCommand($sql)->queryScalar();//应考次数
-        $sql="select count(*) FROM sys_examhistory a LEFT JOIN sys_exam b on a.ehexamid=b.examid WHERE a.userid='$userid' AND b.examsubid='$subid' AND ehscore>=60";
-        $examuser=Yii::$app->db->createCommand($sql)->queryScalar();//应考次数
+        $sql="select count(*) FROM sys_examhistory a LEFT JOIN sys_exam b on a.ehexamid=b.examid WHERE a.userid='$userid' AND b.examcourseid='$courseid' AND ehscore>=60";
+        $examuser=Yii::$app->db->createCommand($sql)->queryScalar();//通关次数
         if(!empty($data)){
             foreach ($data as $key => $val) {
                 if($val['ehgardestatus']==2 && ($val['ehscore']>=60)){
@@ -76,5 +76,47 @@ class ApitestController extends Controller
 
 		return json_encode($userdata);
 		
-	}
+	}*/
+
+    public function actionGetexambyuser(){
+        $req = Yii::$app->request;
+        $this->layout = 0;
+        $userid = $req->get('userid',"");
+        $courseid = $req->get('courseid',"");
+
+        $sql="select count(*) FROM sys_examhistory a LEFT JOIN sys_exam b on a.ehexamid=b.examid WHERE a.userid='$userid' AND b.examcourseid='$courseid' AND ehscore>=60";
+        $examuser=Yii::$app->db->createCommand($sql)->queryScalar();//通关次数
+
+        $sql="select * from sys_exam where examcourseid ='$courseid'";
+        $data=Yii::$app->db->createCommand($sql)->queryAll();
+        if (!empty($data)) {
+            foreach ($data as $key => $value) {
+                $sql = "select a.ehid,a.ehexamid,a.ehscore,a.ehgardestatus,b.examcoursesectionname,b.examname FROM sys_examhistory a LEFT JOIN sys_exam b on a.ehexamid=".$value['examid']." WHERE a.userid='$userid' AND b.examcourseid='$courseid' AND a.ehstatus=1";
+                $result=Yii::$app->db->createCommand($sql)->queryOne();
+                if ($result) {
+                    if($result['ehgardestatus']==2 && ($result['ehscore']>=60)){
+                        $_k=Pub::enFormMD52('open',$result['ehid']);
+                        $data[$key]['status'] = 1;
+                        $data[$key]['link'] = 'http://'.$_SERVER['SERVER_NAME'].':'.$_SERVER["SERVER_PORT"] ."?r=student/student/loadexam"."&c1=".$result['ehid']."&_k=".$_k;;
+                    }elseif ($result['ehgardestatus']==1 || $result['ehgardestatus']==3){
+                        $data[$key]['status'] = 3;
+                        $data[$key]['link'] = "";
+                    }else{
+                        $_k=Pub::enFormMD52('exam',$result['ehexamid']);
+                        $data[$key]['status'] = 2;
+                        $data[$key]['link'] ='http://'.$_SERVER['SERVER_NAME'].':'.$_SERVER["SERVER_PORT"] ."?r=student/student/toexam"."&examid=".$result['ehexamid']."&_k=".$_k;
+                    }
+                } else {
+                    $_k=Pub::enFormMD52('exam',$value['examid']);
+                    $data[$key]['status'] = 2;
+                    $data[$key]['link'] ='http://'.$_SERVER['SERVER_NAME'].':'.$_SERVER["SERVER_PORT"] ."?r=student/student/toexam"."&examid=".$value['examid']."&_k=".$_k;
+                }
+            }
+        }
+        $userdata=array_merge(array('examnum'=>count($data),'examuser'=>$examuser,'list'=>$data));
+        //file_put_contents('E:/log/l' . time() . '.txt', print_r($userdata, true), FILE_APPEND);
+
+        return json_encode($userdata);
+        
+    }
 }
