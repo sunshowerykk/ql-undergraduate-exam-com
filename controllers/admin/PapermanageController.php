@@ -207,7 +207,7 @@ class PapermanageController extends BaseController
         if ( pub::is_mobile() ) {
             return $this->render('Createphonehead', $part);
         }else {
-            return $this->render('Createhead', $part);
+            return $this->render('createhead', $part);
         }
     }
     public function actionCopyhead(){  //新增加的view
