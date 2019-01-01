@@ -89,31 +89,36 @@ class ApitestController extends Controller
 
         $sql="select * from sys_exam where examcourseid ='$courseid'";
         $data=Yii::$app->db->createCommand($sql)->queryAll();
+        $return_data = array();
         if (!empty($data)) {
             foreach ($data as $key => $value) {
+                $return_data[$key]['chapterName'] = $value['examcoursesectionname'];
+                $return_data[$key]['examName'] = $value['examname'];
                 $sql = "select a.ehid,a.ehexamid,a.ehscore,a.ehgardestatus,b.examcoursesectionname,b.examname FROM sys_examhistory a LEFT JOIN sys_exam b on a.ehexamid=".$value['examid']." WHERE a.userid='$userid' AND b.examcourseid='$courseid' AND a.ehstatus=1";
                 $result=Yii::$app->db->createCommand($sql)->queryOne();
                 if ($result) {
+                    $return_data[$key]['score'] = $result['ehscore'];
                     if($result['ehgardestatus']==2 && ($result['ehscore']>=60)){
                         $_k=Pub::enFormMD52('open',$result['ehid']);
-                        $data[$key]['status'] = 1;
-                        $data[$key]['link'] = 'http://'.$_SERVER['SERVER_NAME'].':'.$_SERVER["SERVER_PORT"] ."?r=student/student/loadexam"."&c1=".$result['ehid']."&_k=".$_k;;
+                        $return_data[$key]['status'] = 1;
+                        $return_data[$key]['link'] = 'http://'.$_SERVER['SERVER_NAME'].':'.$_SERVER["SERVER_PORT"] ."?r=student/student/loadexam"."&c1=".$result['ehid']."&_k=".$_k;;
                     }elseif ($result['ehgardestatus']==1 || $result['ehgardestatus']==3){
-                        $data[$key]['status'] = 3;
-                        $data[$key]['link'] = "";
+                        $return_data[$key]['status'] = 3;
+                        $return_data[$key]['link'] = "";
                     }else{
                         $_k=Pub::enFormMD52('exam',$result['ehexamid']);
-                        $data[$key]['status'] = 2;
-                        $data[$key]['link'] ='http://'.$_SERVER['SERVER_NAME'].':'.$_SERVER["SERVER_PORT"] ."?r=student/student/toexam"."&examid=".$result['ehexamid']."&_k=".$_k;
+                        $return_data[$key]['status'] = 2;
+                        $return_data[$key]['link'] ='http://'.$_SERVER['SERVER_NAME'].':'.$_SERVER["SERVER_PORT"] ."?r=student/student/toexam"."&examid=".$result['ehexamid']."&_k=".$_k;
                     }
                 } else {
                     $_k=Pub::enFormMD52('exam',$value['examid']);
-                    $data[$key]['status'] = 2;
-                    $data[$key]['link'] ='http://'.$_SERVER['SERVER_NAME'].':'.$_SERVER["SERVER_PORT"] ."?r=student/student/toexam"."&examid=".$value['examid']."&_k=".$_k;
+                    $return_data[$key]['status'] = 2;
+                    $return_data[$key]['link'] ='http://'.$_SERVER['SERVER_NAME'].':'.$_SERVER["SERVER_PORT"] ."?r=student/student/toexam"."&examid=".$value['examid']."&_k=".$_k;
+                    $return_data[$key]['score'] = 0;
                 }
             }
         }
-        $userdata=array_merge(array('examnum'=>count($data),'examuser'=>$examuser,'list'=>$data));
+        $userdata=array_merge(array('examnum'=>count($data),'examuser'=>$examuser,'list'=>$return_data));
         //file_put_contents('E:/log/l' . time() . '.txt', print_r($userdata, true), FILE_APPEND);
 
         return json_encode($userdata);
