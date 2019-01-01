@@ -9,7 +9,6 @@ echo Html::jsFile('assets/js/pub.js?r='.time());  //自定义
 echo Html::jsFile('assets/artDialog/dialog-plus.js');  //弹出框
 echo Html::jsFile('assets/js/jquery-1.8.1.min.js');
 echo Html::jsFile('assets/js/jquery.form.js');
-echo Html::jsFile('assets/artDialog/dialog-plus.js');  //弹出框
 echo Html::jsFile('assets/ueditor/ueditor.config.js');   //编辑器
 echo Html::jsFile('assets/ueditor/ueditor.all.min.js');  //编辑器
 echo Html::jsFile('assets/ueditor/lang/zh-cn/zh-cn.js'); //编辑器

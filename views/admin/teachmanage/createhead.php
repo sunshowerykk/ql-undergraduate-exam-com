@@ -8,7 +8,6 @@ echo Html::cssFile('assets/artDialog/ui-dialog.css');
 echo Html::jsFile('assets/artDialog/dialog-plus.js');  //弹出框
 echo Html::jsFile('assets/js/jquery-1.8.1.min.js');
 echo Html::jsFile('assets/js/jquery.form.js');
-echo Html::jsFile('assets/artDialog/dialog-plus.js');  //弹出框
 echo Html::cssFile('assets/css/public.css?r='.time());
 echo Html::jsFile('assets/js/plupload.full.min.js');  //图片上userFlag传js
 echo Html::cssFile('assets/css/common.css');  //图片上传js
