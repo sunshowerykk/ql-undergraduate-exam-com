@@ -113,7 +113,7 @@ class PwdController extends BaseController
         );
         //返回值处理或调用模板
         if (Yii::$app->request->isAjax){ //ajax提交
-            return $this->renderAjax('Createhead',$part); //不调用layout
+            return $this->renderAjax('createhead',$part); //不调用layout
         }else{   //普通提交
             // return $this->render('');
         }

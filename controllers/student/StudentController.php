@@ -256,7 +256,7 @@ class StudentController extends BaseController
         if ( pub::is_mobile() ) {
             return $this->render('Createphonehead', $part);
         }else{
-            return $this->render('Createhead', $part);
+            return $this->render('createhead', $part);
         }
     }
     public function actionEdithead(){  //修改的view
@@ -344,7 +344,7 @@ class StudentController extends BaseController
         if ( pub::is_mobile() ) {
             return $this->render('Createphonehead', $part);
         }else{
-            return $this->render('Createhead', $part);
+            return $this->render('createhead', $part);
         }
     }//end of EitdHead
     public function actionSavehead(){    //新加保存
