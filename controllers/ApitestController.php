@@ -101,19 +101,19 @@ class ApitestController extends Controller
                     if($result['ehgardestatus']==2 && ($result['ehscore']>=60)){
                         $_k=Pub::enFormMD52('open',$result['ehid']);
                         $return_data[$key]['status'] = 1;
-                        $return_data[$key]['link'] = 'http://'.$_SERVER['SERVER_NAME'].':'.$_SERVER["SERVER_PORT"] ."?r=student/student/loadexam"."&c1=".$result['ehid']."&_k=".$_k;;
+                        $return_data[$key]['link'] = 'http://'.$_SERVER['SERVER_NAME']."?r=student/student/loadexam"."&c1=".$result['ehid']."&_k=".$_k;;
                     }elseif ($result['ehgardestatus']==1 || $result['ehgardestatus']==3){
                         $return_data[$key]['status'] = 3;
                         $return_data[$key]['link'] = "";
                     }else{
                         $_k=Pub::enFormMD52('exam',$result['ehexamid']);
                         $return_data[$key]['status'] = 2;
-                        $return_data[$key]['link'] ='http://'.$_SERVER['SERVER_NAME'].':'.$_SERVER["SERVER_PORT"] ."?r=student/student/toexam"."&examid=".$result['ehexamid']."&_k=".$_k;
+                        $return_data[$key]['link'] ='http://'.$_SERVER['SERVER_NAME']."?r=student/student/toexam"."&examid=".$result['ehexamid']."&_k=".$_k;
                     }
                 } else {
                     $_k=Pub::enFormMD52('exam',$value['examid']);
                     $return_data[$key]['status'] = 2;
-                    $return_data[$key]['link'] ='http://'.$_SERVER['SERVER_NAME'].':'.$_SERVER["SERVER_PORT"] ."?r=student/student/toexam"."&examid=".$value['examid']."&_k=".$_k;
+                    $return_data[$key]['link'] ='http://'.$_SERVER['SERVER_NAME']."?r=student/student/toexam"."&examid=".$value['examid']."&_k=".$_k;
                     $return_data[$key]['score'] = 0;
                 }
             }
