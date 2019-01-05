@@ -681,7 +681,7 @@ class PapermanageController extends BaseController
         if ( pub::is_mobile() ) {
             return $this->render('createtypephone', $part);
         }else {
-            return $this->render('Createtype', $part);
+            return $this->render('createtype', $part);
         }
     }//end of EitdHead
 
