@@ -629,9 +629,9 @@ class MyexamController extends BaseController
         );
         //返回值处理或调用模板
         if ( pub::is_mobile() ) {
-            return $this->render('Errorphonehead', $part);
+            return $this->render('errorphonehead', $part);
         }else{
-            return $this->render('Errorhead', $part);
+            return $this->render('errorhead', $part);
         }
 
     }//end of EitdHead

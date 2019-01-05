@@ -144,9 +144,9 @@ class ClassmanageController extends BaseController
         );
         //返回值处理或调用模板
         if (Yii::$app->request->isAjax){ //ajax提交
-            return $this->renderAjax('Indexsection',$part); //不調用layout
+            return $this->renderAjax('indexsection',$part); //不調用layout
         }else{   //普通提交
-            return $this->render('Indexsection',$part); //不調用layout
+            return $this->render('indexsection',$part); //不調用layout
         }
     }
     public function actionFindsection($qFuncName=''){

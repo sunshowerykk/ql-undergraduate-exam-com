@@ -109,7 +109,7 @@ class TeachmanageController extends BaseController
         );
         //返回值处理或调用模板
         if ( pub::is_mobile() ) {
-            return $this->render('Createphonehead', $part);
+            return $this->render('createphonehead', $part);
         }else {
             return $this->render('createhead', $part);
         }
@@ -140,7 +140,7 @@ class TeachmanageController extends BaseController
         );
         //返回值处理或调用模板
         if ( pub::is_mobile() ) {
-            return $this->render('Createphonehead', $part);
+            return $this->render('createphonehead', $part);
         }else {
             return $this->render('createhead', $part);
         }
